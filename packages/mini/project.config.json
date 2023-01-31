@@ -16,7 +16,10 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "es6": true,
+    "enhance": true,
+    "minified": true
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

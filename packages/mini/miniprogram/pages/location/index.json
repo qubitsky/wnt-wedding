@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "💒 婚礼地点",
-  "usingComponents": {}
+  "usingComponents": {
+    "w-icon": "../../components/w-icon"
+  }
 }

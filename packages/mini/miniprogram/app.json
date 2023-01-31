@@ -4,32 +4,32 @@
     "selectedColor": "#333",
     "list": [{
         "pagePath": "pages/index/index",
-        "iconPath": "images/invite.png",
-        "selectedIconPath": "images/invite-selected.png",
+        "iconPath": "assets/images/invite.png",
+        "selectedIconPath": "assets/images/invite-selected.png",
         "text": "邀请函"
       },
       {
         "pagePath": "pages/photos/index",
-        "iconPath": "images/dress.png",
-        "selectedIconPath": "images/dress-selected.png",
+        "iconPath": "assets/images/dress.png",
+        "selectedIconPath": "assets/images/dress-selected.png",
         "text": "相册"
       },
       {
         "pagePath": "pages/videos/index",
-        "iconPath": "images/video.png",
-        "selectedIconPath": "images/video-selected.png",
+        "iconPath": "assets/images/video.png",
+        "selectedIconPath": "assets/images/video-selected.png",
         "text": "时光"
       },
       {
         "pagePath": "pages/location/index",
-        "iconPath": "images/location.png",
-        "selectedIconPath": "images/location-selected.png",
+        "iconPath": "assets/images/location.png",
+        "selectedIconPath": "assets/images/location-selected.png",
         "text": "地点"
       },
       {
         "pagePath": "pages/guest/index",
-        "iconPath": "images/bear.png",
-        "selectedIconPath": "images/bear-selected.png",
+        "iconPath": "assets/images/bear.png",
+        "selectedIconPath": "assets/images/bear-selected.png",
         "text": "宾客"
       }
     ]

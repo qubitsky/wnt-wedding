@@ -1,1 +1,38 @@
-<map class="map" show-location></map>
+<view class="container">
+  <map
+    id="hotel-map"
+    class="map"
+    subkey="43KBZ-XEWO3-MDS3P-YPLOZ-WGKSV-IFB3R"
+    latitude="{{pos.latitude}}"
+    longitude="{{pos.longitude}}"
+    markers="{{markers}}"
+    enable-satellite="{{enableSatellite}}"
+    scale="{{enableSatellite ? 15.7 : 15.8}}"
+    polygons="{{polygons}}"
+    show-scale
+  ></map>
+  <view class="panel">
+    <scroll-view class="panel-imgs" scroll-x="true">
+      <image
+        class="panel-img"
+        wx:for="{{hotelPics}}"
+        wx:key="index"
+        lazy-load
+        src="{{item}}"
+        mode="aspectFill"
+        data-url="{{item}}"
+        bindtap="handleTapThumb"
+      />
+    </scroll-view>
+    <view class="panel-info" bindtap="handleGuide">
+      <view>
+        地址：{{hotelInfo.address}}
+      </view>
+      <w-icon
+        root-class="guide-icon"
+        name="guide"
+        size="20"
+      ></w-icon>
+    </view>
+  </view>
+</view>

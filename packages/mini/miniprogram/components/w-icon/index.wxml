@@ -1,0 +1,11 @@
+<image
+  class="root-class w-icon"
+  src="{{imgSrc}}"
+  mode="aspectFit"
+  style="{{_.colorStyle(color) + sizeStyle + style}}"
+/>
+<wxs module="_">
+  module.exports.colorStyle = function (color) {
+    return color ? "filter: drop-shadow(1000px 0 0 " + color + "); transform: translate(-1000px);" : '';
+  };
+</wxs>

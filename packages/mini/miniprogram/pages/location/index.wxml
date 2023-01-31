@@ -7,10 +7,27 @@
     longitude="{{pos.longitude}}"
     markers="{{markers}}"
     enable-satellite="{{enableSatellite}}"
-    scale="{{enableSatellite ? 15.7 : 15.8}}"
+    scale="{{scale}}"
     polygons="{{polygons}}"
     show-scale
-  ></map>
+  >
+    <view class="layer-control" bindtap="handleTapLayer">
+      <w-icon
+        root-class="satellite-icon"
+        name="satellite"
+        color="{{enableSatellite ? '#3875FF' : ''}}"
+        size="20"
+      ></w-icon>
+    </view>
+    <view class="zoom-controls">
+      <view class="zoom-in" bindtap="handleZoomIn">
+        <w-icon root-class="zoom-icon" name="zoom-in" size="20"></w-icon>
+      </view>
+      <view class="zoom-out" bindtap="handleZoomOut">
+        <w-icon root-class="zoom-icon" name="zoom-out" size="20"></w-icon>
+      </view>
+    </view>
+  </map>
   <view class="panel">
     <scroll-view class="panel-imgs" scroll-x="true">
       <image
@@ -28,11 +45,7 @@
       <view>
         地址：{{hotelInfo.address}}
       </view>
-      <w-icon
-        root-class="guide-icon"
-        name="guide"
-        size="20"
-      ></w-icon>
+      <w-icon root-class="guide-icon" name="guide" size="20"></w-icon>
     </view>
   </view>
 </view>

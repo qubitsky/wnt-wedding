@@ -1,3 +1,10 @@
 <view class="container">
-  <image wx:for="{{bgImgs}}" class="bg-image" lazy-load src="{{item}}" mode="widthFix" />
+  <image
+    wx:for="{{bgImgs}}"
+    wx:key="index"
+    class="bg-image"
+    lazy-load
+    src="{{item}}"
+    mode="widthFix"
+  />
 </view>

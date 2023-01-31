@@ -58,6 +58,7 @@ Page({
   data: {
     hotelInfo: HOTEL_INFO,
     hotelPics: Array.from({ length: 6 }).map((_, i) => `/assets/images/wenshang_hotel_${i + 1}.jpeg`),
+    scale: 15.8,
     enableSatellite: false,
     pos: HOTEL_POS,
     polygons: [
@@ -78,6 +79,18 @@ Page({
     this._mapCtx = wx.createMapContext('hotel-map');
   },
 
+  handleZoomIn() {
+    this.setData({
+      scale: Math.min(20, this.data.scale + 1)
+    });
+  },
+
+  handleZoomOut() {
+    this.setData({
+      scale: Math.max(3, this.data.scale - 1)
+    });
+  },
+
   handleTapThumb(e: WechatMiniprogram.CustomEvent) {
     const { url } = e.currentTarget.dataset;
     const { hotelPics } = this.data;
@@ -91,6 +104,14 @@ Page({
     this._mapCtx?.openMapApp({
       ...HOTEL_POS,
       destination: HOTEL_INFO.name
+    });
+  },
+
+  handleTapLayer() {
+    const {enableSatellite} = this.data;
+    this.setData({
+      scale: enableSatellite ? 15.8 : 15.7,
+      enableSatellite: !enableSatellite
     });
   },
 

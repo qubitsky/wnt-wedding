@@ -12,6 +12,29 @@
   width: 100%;
 }
 
+.control-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  position: absolute;
+  right: 40rpx;
+  z-index: 1;
+}
+
+.zoom-controls {
+  .control-container();
+  bottom: 40rpx;
+}
+
+.layer-control {
+  .control-container();
+  padding: 10px;
+  top: 40rpx;
+}
+
+.zoom-in, .zoom-out {
+  padding: 10px;
+}
+
 .panel {
   padding: @page-padding;
   &-info {
@@ -23,7 +46,6 @@
     margin-bottom: 10px;
   }
   &-img {
-    vertical-align: middle;
     width: 120rpx;
     height: 120rpx;
     margin-right: 20rpx;

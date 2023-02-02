@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "📝婚礼邀请函",
-  "usingComponents": {}
+  "navigationBarTitleText": "📝 婚礼邀请",
+  "usingComponents": {
+    "w-icon": "../../components/w-icon"
+  }
 }

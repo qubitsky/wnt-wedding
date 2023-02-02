@@ -7,4 +7,8 @@
     src="{{item}}"
     mode="widthFix"
   />
+  <view class="music-wrapper{{musicPlaying ? ' playing' : ''}}" bindtap="handleTapMusic">
+    <w-icon wx:if="{{musicPlaying}}" root-class="music-icon" name="music" size="16"></w-icon>
+    <w-icon wx:else root-class="music-icon" name="music-forbid" size="16"></w-icon>
+  </view>
 </view>

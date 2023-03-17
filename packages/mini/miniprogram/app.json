@@ -2,7 +2,8 @@
   "tabBar": {
     "color": "#999",
     "selectedColor": "#333",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/index/index",
         "iconPath": "assets/images/invite.png",
         "selectedIconPath": "assets/images/invite-selected.png",
@@ -36,11 +37,19 @@
   },
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/photos/index",
     "pages/guest/index",
     "pages/location/index",
     "pages/videos/index"
+  ],
+  "subpackages": [
+    {
+      "root": "subpackages/invite",
+      "pages": [
+        "simple/index",
+        "romance/index"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",

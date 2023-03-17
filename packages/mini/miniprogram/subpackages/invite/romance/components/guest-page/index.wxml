@@ -1,0 +1,18 @@
+<swiper-page root-class="guest">
+  <view class="guest__top-text">
+    guest
+  </view>
+  <view class="guest__title">
+    宾客登记
+  </view>
+  <image class="guest__qrcode" src="https://qubi-1258193362.cos.ap-shanghai.myqcloud.com/wnt-wedding/guest-qrcode.jpg" mode="aspectFit" show-menu-by-longpress />
+  <view class="guest__desc">
+    <view>
+      请长按识别上方的小程序码，进行登记
+    </view>
+    <view>
+      以便我们统计人数和接待宾客
+    </view>
+  </view>
+  <butterflies></butterflies>
+</swiper-page>

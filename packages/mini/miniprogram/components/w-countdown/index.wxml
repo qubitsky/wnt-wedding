@@ -1,0 +1,18 @@
+<view class="root-class w-countdown">
+  <view class="w-countdown__item">
+    <view class="w-countdown__value">{{timeLeft.days}}</view>
+    <view class="w-countdown__label">天</view>
+  </view>
+  <view class="w-countdown__item">
+    <view class="w-countdown__value">{{timeLeft.hours}}</view>
+    <view class="w-countdown__label">时</view>
+  </view>
+  <view class="w-countdown__item">
+    <view class="w-countdown__value">{{timeLeft.minutes}}</view>
+    <view class="w-countdown__label">分</view>
+  </view>
+  <view class="w-countdown__item">
+    <view class="w-countdown__value">{{timeLeft.seconds}}</view>
+    <view class="w-countdown__label">秒</view>
+  </view>
+</view>

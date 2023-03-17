@@ -1,0 +1,62 @@
+@import '../../styles/variables.less';
+
+.cover {
+  background: url(https://qnm.hunliji.com/FpPJ6C7JbcWbaTRrzPkFnvQr8pSu?imageView2/2/format/webp/w/1284) no-repeat;
+  background-size: cover;
+
+  &__top-text {
+    font-family: @en-handwrite-font;
+    font-size: @bg-en-size;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    margin-top: -20rpx;
+  }
+
+  &__title {
+    font-family: @maobi-font;
+    font-size: @cover-title-size;
+    color: @text-color;
+    text-align: center;
+    line-height: 1;
+    margin-top: -0.5em;
+  }
+
+  &__couple {
+    &-wrapper {
+      color: @text-color;
+      text-align: right;
+      position: absolute;
+      right: 50rpx;
+      bottom: 300rpx;
+    }
+
+    &-label {
+      font-family: @handwrite-font;
+    }
+
+    &-name {
+      font-size: 1.5em;
+    }
+  }
+
+  &__date {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 100rpx;
+    left: 0;
+  }
+
+  .barrage {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 30%;
+    left: 0;
+    transform: scale(1.8) rotate(20deg);
+  }
+
+}

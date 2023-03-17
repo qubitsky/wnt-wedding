@@ -1,0 +1,22 @@
+<swiper-page root-class="process">
+  <view class="process__top-text">
+    process
+  </view>
+  <view class="process__title">
+    婚礼流程
+  </view>
+  <view class="timeline">
+    <view wx:for="{{processList}}" wx:key="index" class="timeline__item">
+      <view class="timeline__span">
+        <w-icon name="{{item.icon}}" size="30"></w-icon>
+      </view>
+      <view class="timeline__span">
+        <view class="timeline__time">{{item.time}}</view>
+      </view>
+      <view class="timeline__span">
+        <text class="timeline__content">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+  <butterflies></butterflies>
+</swiper-page>

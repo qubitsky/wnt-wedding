@@ -1,0 +1,7 @@
+<view class="root-class wrapper">
+  <view class="butterfly butterfly--1"></view>
+  <view class="butterfly butterfly--2"></view>
+  <view class="butterfly butterfly--3"></view>
+  <view class="butterfly butterfly--4"></view>
+  <view class="butterfly butterfly--5"></view>
+</view>

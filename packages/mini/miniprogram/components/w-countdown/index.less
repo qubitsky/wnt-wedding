@@ -1,0 +1,19 @@
+@import '../../styles/variable.less';
+
+
+.w-countdown {
+  display: inline-flex;
+  &__item {
+    width: 40px;
+    margin: 0 5px;
+    padding: 2px 0;
+    border: 1px solid @color-xi-red;
+    border-radius: 4px;
+    text-align: center;
+  }
+  &__value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    font-size: var(--font-lg);
+  }
+}

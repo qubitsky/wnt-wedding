@@ -1,0 +1,30 @@
+<view class="container">
+  <swiper
+    vertical
+    class="swiper"
+    current="{{current}}"
+    bindchange="handleSwiperChange"
+  >
+    <swiper-item class="swiper-item">
+      <cover-page active="{{current === 0}}"></cover-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <invite-page></invite-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <bride-page></bride-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <groom-page></groom-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <process-page></process-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <location-page></location-page>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <guest-page></guest-page>
+    </swiper-item>
+  </swiper>
+</view>

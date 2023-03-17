@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "cover-page": "./components/cover-page",
+    "invite-page": "./components/invite-page",
+    "bride-page": "./components/bride-page",
+    "groom-page": "./components/groom-page",
+    "process-page": "./components/process-page",
+    "location-page": "./components/location-page",
+    "guest-page": "./components/guest-page"
+  }
+}

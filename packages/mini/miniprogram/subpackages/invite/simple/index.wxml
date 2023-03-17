@@ -1,0 +1,151 @@
+<view class="container">
+  <swiper vertical class="swiper">
+    <swiper-item class="swiper-item cover-page">
+      <image
+        class="cover-img"
+        lazy-load
+        src="https://h5cdn.hunbei.com/editorCustomPic/2020-7-21-jDsZfYRGEM3BWfTsMMAesYnQ4ZehsFF3?imageMogr2/auto-orient/thumbnail/765.00x1147.50"
+        mode="aspectFill"
+      />
+      <view class="cover-content">
+        <view class="cover-title">
+          <text class="cover-title-st">我们要</text>
+          <text class="cover-title-em">结婚</text>
+          <text class="cover-title-ed">啦~ 🎉</text>
+        </view>
+        <view class="cover-couple">
+          <text>王世杰</text>
+          <text class="xi-wrapper"
+            ><text class="xi-text">喜喜</text></text
+          >
+          <text>唐瑶</text>
+        </view>
+        <view class="cover-date">2023.10.02</view>
+        <view class="cover-bottom">
+          <view>
+            welcome to our wedding
+          </view>
+        </view>
+        <!-- <image
+          wx:for="{{fireworkGifs}}"
+          wx:key="index"
+          class="cover-firework{{index + 1}}"
+          src="{{item}}"
+          mode="aspectFit"
+        /> -->
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item invite-page">
+      <view style="height: {{paddingTop + 10}}px;"> </view>
+      <view class="invite-title">
+        invitation
+      </view>
+      <view class="invite-content">
+        <view>我们将于</view>
+        <view>2023年10月2日 农历八月十八</view>
+        <view>上午 11:00</view>
+        <view>举行婚礼 敬备喜筵</view>
+        <view>安福文山大酒店</view>
+        <view>江西省安福县武功山大道金岸广场</view>
+      </view>
+      <view class="invite-countdown">
+        <view class="invite-clock">⏰</view>
+        <w-countdown target="{{targetDate}}"></w-countdown>
+      </view>
+      <view class="invite-bottom">
+        <image
+          class="invite-photo"
+          src="https://qnm.hunliji.com/Fs2aHK6F_2BJT_PC60kUiRMThgLv?imageView2/2/format/webp/w/1284"
+          mode="aspectFill"
+        />
+        <image
+          class="invite-photo"
+          src="https://qnm.hunliji.com/FlACMl-RrqK5D1SDtprOZJuTj5BI?imageView2/2/format/webp/w/1284"
+          mode="aspectFill"
+        />
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item bride-page">
+      <view style="height: {{paddingTop + 10}}px;"> </view>
+      <view class="bride-title">the bride 👰</view>
+      <view class="bride-desc"
+        >我们即将步入婚姻的殿堂，这一切都离不开你们的支持和祝福</view
+      >
+      <view class="groom-img-container">
+        <image
+          class="bride-img"
+          src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-24-2FFebGzzHATypMJaeZyKjjEZbTKi68sc.jpeg?imageMogr2/auto-orient/thumbnail/807.00x1210.80>"
+          mode="aspectFill"
+          show-menu-by-longpress
+        />
+      </view>
+      <view class="bride-subtitle">唐瑶 <text class="zh-title">/ 新娘</text></view>
+    </swiper-item>
+    <swiper-item class="swiper-item groom-page">
+      <view style="height: {{paddingTop + 10}}px;"> </view>
+      <view class="groom-title">🤵 the groom</view>
+      <view class="groom-desc"
+        >我们期待着与你们共同庆祝这个难忘的日子，一起创造属于我们的美好回忆。</view
+      >
+      <view class="groom-img-container">
+        <image
+          class="groom-img"
+          src="https://h5cdn.hunbei.com/editorCustomPic/2022-1-24-CaHHzkNB4RXtrRSAFHfeDbEnw7MfMW42.jpeg?imageMogr2/auto-orient/thumbnail/807.00x1210.80>"
+          mode="aspectFill"
+          show-menu-by-longpress
+        />
+      </view>
+      <view class="groom-subtitle"> <text class="zh-title">新郎 /</text> 王世杰</view>
+    </swiper-item>
+    <swiper-item class="swiper-item process-page">
+      <view style="height: {{paddingTop}}px;"></view>
+      <view class="process-title">婚礼流程</view>
+      <view class="process-timeline">
+        <view class="process-timeline__item">
+          <view class="process-timeline__label">10:00</view>
+          <view class="process-timeline__content">接亲仪式</view>
+        </view>
+        <view class="process-timeline__item">
+          <view class="process-timeline__label">11:00</view>
+          <view class="process-timeline__content">喜迎宾客</view>
+        </view>
+        <view class="process-timeline__item">
+          <view class="process-timeline__label">11:30</view>
+          <view class="process-timeline__content">婚礼仪式</view>
+        </view>
+        <view class="process-timeline__item">
+          <view class="process-timeline__label">12:00</view>
+          <view class="process-timeline__content">抽奖环节</view>
+        </view>
+        <view class="process-timeline__item">
+          <view class="process-timeline__label">12:30</view>
+          <view class="process-timeline__content">享用酒宴</view>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item address-page">
+      <view style="height: {{paddingTop}}px;"> </view>
+      <view class="address-title">婚礼地点</view>
+      <view class="address-map-container">
+        <map
+          id="address-map"
+          class="address-map"
+          subkey="43KBZ-XEWO3-MDS3P-YPLOZ-WGKSV-IFB3R"
+          latitude="{{pos.latitude}}"
+          longitude="{{pos.longitude}}"
+          markers="{{markers}}"
+          polygons="{{polygons}}"
+          show-scale
+          catch:touchmove="void 0;"
+        ></map>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item guest-page">
+      <view class="guest-title">宾客登记</view>
+    </swiper-item>
+  </swiper>
+  <!-- <view class="music-wrapper{{musicPlaying ? ' playing' : ''}}" bindtap="handleTapMusic">
+    <w-icon wx:if="{{musicPlaying}}" root-class="music-icon" name="music" size="16"></w-icon>
+    <w-icon wx:else root-class="music-icon" name="music-forbid" size="16"></w-icon>
+  </view> -->
+</view>

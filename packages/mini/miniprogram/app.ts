@@ -1,18 +1,24 @@
 // app.ts
 App<IAppOption>({
-  globalData: {},
+  globalData: {
+    statusBarHeight: 0,
+    menuButtonHeight: 0,
+    navBarHeight: 0,
+  },
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    const { statusBarHeight, platform } =
+      wx.getSystemInfoSync();
+    const { top, height } = wx.getMenuButtonBoundingClientRect();
 
-    // 登录
-    wx.login({
-      success: res => {
-        console.log(res.code)
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      },
-    })
+    const globalData = this.globalData;
+    globalData.statusBarHeight = statusBarHeight;
+    globalData.menuButtonHeight = height || 32;
+
+    // 判断胶囊按钮信息是否成功获取
+    if (top && height) {
+      globalData.navBarHeight = (top - statusBarHeight) * 2 + height;
+    } else {
+      globalData.navBarHeight = platform === 'android' ? 48 : 40;
+    }
   },
 })

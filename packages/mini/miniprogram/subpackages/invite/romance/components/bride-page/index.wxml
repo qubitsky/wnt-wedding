@@ -1,0 +1,14 @@
+<swiper-page root-class="bride" body-class="bride__body">
+  <view class="bride__title">
+    the bride
+  </view>
+  <view class="bride__subtitle">
+    我即将步入婚姻的殿堂，需要你们的支持与祝福
+  </view>
+  <image class="bride__photo" src="https://qnm.hunliji.com/FsbIX496Ler22YSzv9UBND5df7Uu?imageView2/2/format/webp/w/1284" mode="aspectFill" />
+  <view class="bride__bottom-text">
+    <text class="bride__name">唐瑶</text>
+    <text class="bride__label"> / 新娘</text>
+  </view>
+  <butterflies></butterflies>
+</swiper-page>

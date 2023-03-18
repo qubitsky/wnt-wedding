@@ -27,4 +27,13 @@
       <guest-page></guest-page>
     </swiper-item>
   </swiper>
+
+  <view class="tools-panel">
+    <image
+      class="music-icon{{musicPlaying ? ' playing': ''}}"
+      src="{{musicPlaying ? 'https://qnm.hunliji.com/FvVfd3boCdgPu2llTHKv5_S7iwrO' : 'https://qnm.hunliji.com/Fso1QssSRg4x1xeJgQHVeBee4DcY' }}"
+      mode="aspectFit"
+      bindtap="handleTapMusic"
+    />
+  </view>
 </view>

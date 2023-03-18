@@ -1,4 +1,8 @@
-<swiper-page root-class="cover">
+<swiper-page
+  root-class="cover"
+  bindtouchstart="closeBarrage"
+  bindtouchend="handleTouchEnd"
+>
   <view class="cover__top-text">
     wedding
   </view>
@@ -21,5 +25,5 @@
     2023.10.02
   </view>
   <butterflies></butterflies>
-  <!-- <barrage class="barrage" rendering-mode="dom"></barrage> -->
+  <barrage class="barrage" rendering-mode="dom"></barrage>
 </swiper-page>

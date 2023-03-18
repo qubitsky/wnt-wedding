@@ -7,21 +7,19 @@ Component({
 
   lifetimes: {
     ready(this: any) {
-      // this.initBarrage();
-      // if (this.data.active && !this._isBarrageOpen) {
-      //   this.openBarrage();
-      // }
+      this.initBarrage();
+      this.timeoutOpenBarrage();
     },
   },
 
   observers: {
-    // active(v) {
-    //   if (v) {
-    //     this.openBarrage();
-    //   } else {
-    //     this.closeBarrage();
-    //   }
-    // },
+    active(this: any, v) {
+      if (v) {
+        this.timeoutOpenBarrage();
+      } else {
+        this.closeBarrage();
+      }
+    },
   },
 
   methods: {
@@ -29,22 +27,28 @@ Component({
       const barrageComp = this.selectComponent(".barrage");
       this._barrage = barrageComp.getBarrageInstance({
         font: "12px system-ui",
-        duration: 30,
+        duration: 50,
         lineHeight: 2,
         mode: "separate",
-        tunnelShow: true,
+        // tunnelShow: true,
         safeGap: 20,
       });
+    },
+    timeoutOpenBarrage(this: any) {
+      this._openTimer = setTimeout(() => {
+        if (!this.data.active) return;
+        this.openBarrage();
+      }, 3000);
     },
     openBarrage(this: any) {
       if (!this._barrage || this._isBarrageOpen) return;
       this._barrage.open();
       const self = this;
       this._barrageTimer = setTimeout(function addData() {
-        const data = mockData(10);
+        const data = mockData(5);
         self._barrage.addData(data);
         self._barrageTimer = setTimeout(addData, 3000);
-      }, 3000);
+      }, 0);
       this._isBarrageOpen = true;
     },
     closeBarrage(this: any) {
@@ -53,5 +57,8 @@ Component({
       this._barrage.close();
       this._isBarrageOpen = false;
     },
+    handleTouchEnd(this: any) {
+      this.timeoutOpenBarrage();
+    }
   },
 });

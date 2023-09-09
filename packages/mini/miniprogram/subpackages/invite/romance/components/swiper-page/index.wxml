@@ -1,7 +1,0 @@
-<view class="root-class page">
-  <view style="height: {{topBlank}}px;"></view>
-  <view class="body-class body">
-    <slot></slot>
-  </view>
-  <view class="bottom-blank"></view>
-</view>

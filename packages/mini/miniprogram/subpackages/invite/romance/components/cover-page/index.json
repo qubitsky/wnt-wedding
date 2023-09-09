@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "barrage": "miniprogram-barrage",
-    "swiper-page": "../swiper-page",
-    "butterflies": "../butterflies"
-  }
-}

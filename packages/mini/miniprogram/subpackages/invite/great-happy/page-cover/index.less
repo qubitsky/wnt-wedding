@@ -1,0 +1,101 @@
+.cover {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+
+  &__top-blank {
+    background-color: #afaeb3;
+  }
+
+  &__bottom-blank {
+    height: env(safe-area-inset-bottom);
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main {
+    flex: 1;
+    background-image: url(https://qubi-1258193362.cos.ap-shanghai.myqcloud.com/wnt-wedding/photos/IMG_2173.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+  }
+
+  &__footer {
+    height: 272rpx;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &-text {
+      font-size: 10px;
+    }
+    &-time {
+      margin-top: 10px;
+    }
+  }
+
+  &__mask {
+    width: 1754rpx;
+    height: 1088rpx;
+    background-size: contain;
+    background-image: url(https://qnm.hunliji.com/FnlC7oQjmPOw8OQMleIp-WsL6ORw);
+    position: absolute;
+    bottom: -664rpx;
+    left: 50%;
+    transform: matrix(1, 0, 0, -1, 0, 0) translateX(-50%);
+    z-index: 0;
+  }
+
+  &__happy {
+    width: 310rpx;
+    height: 281rpx;
+    background-image: url(https://qnm.hunliji.com/FvSJuP6tmmzqYS3GjWrPXTUiTlVB);
+    background-size: contain;
+    position: absolute;
+    bottom: 27rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  &__welcome {
+    text-align: center;
+    margin-top: 43rpx;
+
+    &-title {
+      letter-spacing: 2px;
+    }
+
+    &-desc {
+      font-size: 6px;
+    }
+  }
+
+  &__person {
+    position: absolute;
+    top: 168rpx;
+    right: 54rpx;
+    text-align: right;
+  }
+
+  &__mid-text {
+    position: absolute;
+    bottom: 352rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    letter-spacing: 4px;
+    // font-size: 16px;
+    font-family: "FZSJ-SGLDXMHJW";
+  }
+}

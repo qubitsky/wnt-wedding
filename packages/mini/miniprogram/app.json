@@ -46,8 +46,7 @@
     {
       "root": "subpackages/invite",
       "pages": [
-        "simple/index",
-        "romance/index"
+        "great-happy/index"
       ]
     }
   ],

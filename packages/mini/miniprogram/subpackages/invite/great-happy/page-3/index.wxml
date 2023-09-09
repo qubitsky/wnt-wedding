@@ -1,0 +1,12 @@
+<view class="photo-lg"></view>
+<view class="text">
+  <view class="text-title">欢喜</view>
+  <view class="text-desc">
+    <text>这样的时光，\n 是我喜欢的，\n 也是我想留下的。</text>
+  </view>
+</view>
+<view class="photo3">
+  <view class="photo-sm photo-sm-1"></view>
+  <view class="photo-sm photo-sm-2"></view>
+  <view class="photo-sm photo-sm-3"></view>
+</view>

@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "📝 婚礼邀请",
-  "usingComponents": {}
+  "usingComponents": {
+    "danmaku": "../../components/danmaku"
+  }
 }

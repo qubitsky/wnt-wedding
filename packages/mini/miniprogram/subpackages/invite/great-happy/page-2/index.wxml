@@ -1,0 +1,20 @@
+<view class="page2">
+  <view class="page2__section">
+    <view class="page2__cell">
+      <text class="text text-cn">相爱</text>
+      <text class="text text-en">MY LOVER</text>
+    </view>
+    <view class="page2__cell photo1"></view>
+  </view>
+  <view class="page2__section">
+    <view class="page2__cell photo2"></view>
+    <view class="page2__cell">
+      <text class="text text-cn">相守</text>
+      <text class="text text-en">FOREVER</text>
+    </view>
+  </view>
+  <view class="page2__footer">
+    <text class="text-cn">人生若寄，山川无改。\n</text>
+    <text class="text-en">SAVE THE DATE</text>
+  </view>
+</view>

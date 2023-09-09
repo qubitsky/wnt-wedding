@@ -1,0 +1,32 @@
+<view class="cover">
+  <view class="cover__top-blank" style="height: {{topBlank}}px"></view>
+  <view class="cover__body">
+    <view class="cover__main">
+      <view class="cover__mask"></view>
+      <view class="cover__happy"></view>
+      <view class="cover__welcome">
+        <view class="cover__welcome-title">W.E.L.C.O.M.E</view>
+        <view class="cover__welcome-desc">
+          <text>THANK YOU FOR JOINING US ON THIS SPECIAL DAY OF \n LOVE AND COMMITMENT. \n YOUR PRESENCE MEANS THE WORLD TO US.</text>
+        </view>
+      </view>
+      <view class="cover__person">
+        <view>新人</view>
+        <view>/</view>
+        <view>王世杰</view>
+        <view>唐瑶</view>
+      </view>
+      <view class="cover__mid-text">
+        <text>真切期待您的出席</text>
+      </view>
+    </view>
+    <view class="cover__footer">
+      <view class="cover__footer-text">
+        <text>Invite you to share \n the unforgettable and wonderful day</text>
+      </view>
+      <view class="cover__footer-time">2023.10.02</view>
+      <view class="cover__footer-addr">安福文山大酒店</view>
+    </view>
+  </view>
+  <view class="cover__bottom-blank"></view>
+</view>

@@ -10,7 +10,7 @@ Page({
   },
   handleTapCover() {
     wx.navigateTo({
-      url: `/subpackages/invite/romance/index`
+      url: `/subpackages/invite/great-happy/index`
     });
   },
 

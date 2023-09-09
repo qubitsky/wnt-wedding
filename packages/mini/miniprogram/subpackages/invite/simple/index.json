@@ -1,7 +1,0 @@
-{
-  "navigationStyle": "custom",
-  "usingComponents": {
-    "w-countdown": "../../../components/w-countdown",
-    "w-icon": "../../../components/w-icon"
-  }
-}

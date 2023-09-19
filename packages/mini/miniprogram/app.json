@@ -48,6 +48,12 @@
       "pages": [
         "great-happy/index"
       ]
+    },
+    {
+      "root": "subpackages/wifi",
+      "pages": [
+        "connect/index"
+      ]
     }
   ],
   "window": {

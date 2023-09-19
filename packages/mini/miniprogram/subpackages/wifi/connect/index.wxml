@@ -1,0 +1,5 @@
+<view>
+  <image src="/assets/images/icon_wifi.png" mode="aspectFit"></image>
+  <text>WiFi名称：{{ssid}}</text>
+  <button type="primary" bindtap="handleTapConnect">点击连接</button>
+</view>

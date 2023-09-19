@@ -1,0 +1,18 @@
+<view class="text-container">
+  <view class="title">婚礼时间</view>
+  <view>2023年10月02日 11:00</view>
+  <view>农历：八月十八 (星期一)</view>
+</view>
+<view class="calendar">
+  <view wx:for="01234" wx:key="index" class="calendar-row">
+    <view wx:for="0123456" wx:for-index="idx" wx:key="idx">
+      {{index * 7 + idx + 1}}
+    </view>
+  </view>
+</view>
+<view class="text-container">
+  <view class="title">婚宴地址</view>
+  <view>安福文山大酒店</view>
+</view>
+<map id="hotel-map" class="map" subkey="43KBZ-XEWO3-MDS3P-YPLOZ-WGKSV-IFB3R" latitude="{{pos.latitude}}" longitude="{{pos.longitude}}" markers="{{markers}}" scale="{{scale}}" polygons="{{polygons}}" show-scale>
+</map>

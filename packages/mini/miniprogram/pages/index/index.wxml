@@ -2,7 +2,6 @@
   <swiper vertical class="swiper">
     <swiper-item wx:for="{{bgImgs}}" wx:key="index" class="swiper-item">
       <image wx:key="index" class="bg-image" lazy-load src="{{item}}" mode="aspectFit" bindtap="handleTapCover" />
-      <!-- <danmaku class="danmaku"></danmaku> -->
     </swiper-item>
   </swiper>
 </view>

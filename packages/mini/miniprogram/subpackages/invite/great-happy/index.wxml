@@ -1,4 +1,7 @@
-<page-cover></page-cover>
-<page-2></page-2>
-<page-3></page-3>
-<view class="bottom-blank"></view>
+<block wx:if="{{isReady}}">
+  <page-cover></page-cover>
+  <page-2></page-2>
+  <page-3></page-3>
+  <page-last></page-last>
+  <view class="bottom-blank"></view>
+</block>

@@ -5,25 +5,38 @@ Page({
    * Page initial data
    */
   data: {
-    current: 0,
+    isReady: false,
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad() {
-    const app = getApp();
-    const {  statusBarHeight } = app.globalData;
-    this.setData({
-      topBlank: statusBarHeight,
-    });
+
   },
 
   /**
    * Lifecycle function--Called when page is initially rendered
    */
   onReady() {
-
+    const app = getApp();
+    const { statusBarHeight } = app.globalData;
+    this.setData({
+      topBlank: statusBarHeight,
+    });
+    wx.showLoading({
+      title: '加载中'
+    })
+    wx.getImageInfo({
+      src: 'https://qubi-1258193362.cos.ap-shanghai.myqcloud.com/wnt-wedding/photos/IMG_2173.jpg',
+      success: (res) => {
+        console.log(res);
+        wx.hideLoading();
+        this.setData({
+          isReady: true
+        });
+      }
+    })
   },
 
   /**
